@@ -92,7 +92,7 @@ module Data.ByteString.Builder.Internal (
   , lazyByteStringCopy
   , lazyByteStringInsert
   , lazyByteStringThreshold
-  
+
   , shortByteString
 
   , maximalCopySize
@@ -146,7 +146,7 @@ import qualified GHC.IO.Buffer as IO (Buffer(..), newByteBuffer)
 import           GHC.IO.Handle.Internals (wantWritableHandle, flushWriteBuffer)
 import           GHC.IO.Handle.Types (Handle__, haByteBuffer, haBufferMode)
 import           System.IO (hFlush, BufferMode(..))
-import           Data.IORef
+import           Data.IORef.Unsafe
 #else
 import qualified Data.ByteString.Lazy as L
 #endif
